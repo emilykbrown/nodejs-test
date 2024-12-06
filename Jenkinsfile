@@ -26,7 +26,7 @@ node('ubuntu-us-appserver-2140-60')
     {
         /* This builds the actual image; 
              * This is synonymous to docker build on the command line */
-        app = docker.build('emilykbrown/nodejschatapp')
+        app = docker.build('emilykbrown/nodejs-test')
     }
 
     stage('Post-to-dockerhub')
